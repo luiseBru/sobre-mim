@@ -1,79 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <!-- meta informaçoes sobre a pagina -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sobre mim</title>
-        <link rel="stylesheet" href="reset (1).css">
-        <link rel="stylesheet" href="style.css">
-        <style>
-            body  {
-                background-color: red
-            }
-        </style>
-    </head>
-    <!--html nao tem pescoço-->
-    <body>
+<head>
+    <!-- Meta informações sobre a página -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #471919af;
+            font-family: Arial, sans-serif;
+        }
 
-        <header>
-            <nav>
+        /* Remove sublinhado dos links */
+        a {
+            text-decoration: none;
+            color: #000; /* você pode mudar a cor se quiser */
+        }
+
+        a:hover {
+            text-decoration: underline; /* efeito ao passar o mouse, opcional */
+        }
+
+        /* Remove os marcadores das listas */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        /* Só um detalhe pra deixar o menu com mais espaçamento (opcional) */
+        nav ul li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        img {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
             <ul>
                 <li><a href="#sobreMim">Sobre mim</a></li>
-                <li><a href="#formaxaoAcademina">Formação acadêmica</a></li>
-                <li><a href="#hardAkilss">Hard skllis</a></li>
+                <li><a href="#formacaoAcademica">Formação acadêmica</a></li>
+                <li><a href="#hardSkills">Hard skills</a></li>
                 <li><a href="#softSkills">Soft skills</a></li>
-                <li><a href="#meusProjetos">projetos</a></li>
-                <li><a href="#meusArtigos">artigos</a></li>
+                <li><a href="#meusProjetos">Projetos</a></li>
+                <li><a href="#meusArtigos">Artigos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
-            </nav>
-        </header>
+        </nav>
+    </header>
 
-        <section>
-            <h1>Sobre mim</h1>
-            <p>Lorem90</p>
-            <img src="bruna.jpg"alt="Foto, mulher,branca, cabelo loiro e liso" width="200" title="Foto, mulher,branca,cabelo loiro e liso">
-            
-            section>h2>{Nova seção})+p*2>lorem20
+    <section id="sobreMim">
+        <div class="place">
+         <h1>Sobre mim</h1>
+            <p>Olá, sou estudante</p>
+            <img src="bruna.jpg" alt="Foto de mulher branca com cabelo loiro e liso" width="200" title="Foto de mulher branca com cabelo loiro e liso">
 
-            <header>nav>ul>li*10>a>{link$}
             <ul>
-                <li>
-                    <a href="https://github.com/luiseBru" title="Clique para acessar meu porfólio no Github"
-                    target="_blank">Acesse o meu GitHub</a>
-                </li>
-                <li>
-                    <a href="www.linkedin.com/in/brunaluise" target="_blank" >Acesse o meu linkedin </a>
-                </li>
-            </ul>   
-        </section>
+            <li>
+                <a href="https://github.com/luiseBru" title="Clique para acessar meu portfólio no Github" target="_blank">
+                    Acesse o meu GitHub
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/brunaluise" target="_blank">
+                    Acesse o meu LinkedIn
+                </a>
+            </li>
+            </ul>
+        </div>
+    </section>
 
-        <section>
+    <section id="formacaoAcademica">
+        <div class="place">
+
             <h2>Formação acadêmica</h2>
-        </section>
+        </div>
+    </section>
 
-        <section>
+    <section id="hardSkills">
+        <div class="place">
+
             <h2>Hard skills</h2>
-        </section>
+        </div>
+    </section>
 
-        <section>
+    <section id="softSkills">
+        <div class="place">
+
             <h2>Soft skills</h2>
-        </section>
+        </div>
+    </section>
 
-        <section>
+    <section id="meusProjetos">
+        <div class="place">
+
             <h2>Meus projetos</h2>
-        </section>
+        </div>
+    </section>
 
-        <section>
-            <h2>meus artigos</h2>
-            
-        </section>
+    <section id="meusArtigos">
+        <div class="place">
 
-        <footer>
-            <p>Links úteis</p>
-            <p>Copyright</p>
-        </footer>
+            <h2>Meus artigos</h2>
+        </div>
+    </section>
 
-    </body>
+    <section id="contato">
+        <div class="place">
+
+            <h2>Contato</h2>
+        </div>
+    </section>
+
+    <footer>
+        <p>Links úteis</p>
+    </footer>
+
+</body>
 </html>
