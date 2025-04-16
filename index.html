@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Meta informações sobre a página -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mim</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-        
-    </style>
 </head>
 
 <body>
@@ -30,69 +26,130 @@
 
     <section id="sobreMim">
         <div class="place">
-         <h1>Sobre mim</h1>
+            <h1>Sobre mim</h1>
             <p>Olá, sou estudante do SESI integrado com o SENAI DSI</p>
             <img src="bruna.jpg" alt="Foto de mulher branca com cabelo loiro e liso" width="200" title="Foto de mulher branca com cabelo loiro e liso">
-
             <ul>
-            <li>
-                <a href="https://github.com/luiseBru" title="Clique para acessar meu portfólio no Github" target="_blank">
-                    Acesse o meu GitHub
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/brunaluise" target="_blank">
-                    Acesse o meu LinkedIn
-                </a>
-            </li>
+                <li><a href="https://github.com/luiseBru" target="_blank">Acesse o meu GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/brunaluise" target="_blank">Acesse o meu LinkedIn</a></li>
             </ul>
         </div>
     </section>
 
     <section id="formacaoAcademica">
         <div class="place">
-
             <h2>Formação acadêmica</h2>
+            <ul class="card">
+                <li class="titulo-card">Técnico em Desenvolvimento de Sistemas</li>
+                <li class="instituicao-card">SENAI "Conde José Vicente de Azevedo"</li>
+                <li class="ano-card">2026 (previsto)</li>
+            </ul>
         </div>
     </section>
 
     <section id="hardSkills">
         <div class="place">
-
             <h2>Hard skills</h2>
+            <div class="cards-em-linha">
+                <ul class="card">
+                    <li class="icone-card">🐍</li>
+                    <li class="titulo-card">Python</li>
+                    <li class="descricao-card">Full stack, Flask, FastAPI</li>
+                </ul>
+                <ul class="card">
+                    <li class="icone-card">🌐</li>
+                    <li class="titulo-card">Desenvolvimento Web</li>
+                    <li class="descricao-card">Front-end, HTML, CSS, JavaScript</li>
+                </ul>
+                <ul class="card">
+                    <li class="icone-card">📲</li>
+                    <li class="titulo-card">Desenvolvimento Mobile</li>
+                    <li class="descricao-card">Kotlin, Android Studio, Jetpack Compose</li>
+                </ul>
+                <ul class="card">
+                    <li class="icone-card">🎲</li>
+                    <li class="titulo-card">Análise de Dados</li>
+                    <li class="descricao-card">MySQL, Power BI</li>
+                </ul>
+                <ul class="card">
+                    <li class="icone-card">🧪</li>
+                    <li class="titulo-card">Teste de Software</li>
+                    <li class="descricao-card">JUnit, Cypress</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section id="softSkills">
         <div class="place">
-
             <h2>Soft skills</h2>
+            <div class="cards-em-linha">
+                <ul class="card">
+                    <li class="icone-card">🤝</li>
+                    <li class="titulo-card">Trabalho em equipe</li>
+                </ul>
+                <ul class="card">
+                    <li class="icone-card">🧠</li>
+                    <li class="titulo-card">Pensamento crítico</li>
+                </ul>
+                <ul class="card">
+                    <li class="icone-card">🤔</li>
+                    <li class="titulo-card">Resolução de problemas</li>
+                </ul>
+                <ul class="card">
+                    <li class="icone-card">🐙</li>
+                    <li class="titulo-card">Adaptabilidade</li>
+                </ul>
+                <ul class="card">
+                    <li class="icone-card">📚</li>
+                    <li class="titulo-card">Aprendizado contínuo</li>
+                </ul>
+                <ul class="card">
+                    <li class="icone-card">⏱️</li>
+                    <li class="titulo-card">Autogestão</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section id="meusProjetos">
         <div class="place">
-
             <h2>Meus projetos</h2>
+            <ul>
+                <li><a href="https://luisebru.github.io/meu-projeto-exemplo" target="_blank">Meu Projeto Exemplo</a></li>
+            </ul>
         </div>
     </section>
 
     <section id="meusArtigos">
         <div class="place">
-
             <h2>Meus artigos</h2>
+            <p>Em breve!</p>
         </div>
     </section>
 
     <section id="contato">
         <div class="place">
-
             <h2>Entre em contato</h2>
+            <form>
+                <input type="text" name="nome" placeholder="Seu nome">
+                <input type="email" name="email" placeholder="Seu e-mail">
+                <textarea name="mensagem" rows="5" cols="50" placeholder="Digite sua mensagem"></textarea>
+                <input type="submit" value="Solicitar contato">
+            </form>
         </div>
     </section>
 
     <footer>
-        <p>Links úteis</p>
+        <div class="place">
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+            </ul>
+            <address>São Paulo, SP - Brasil</address>
+            <p>Desenvolvido por <a href="#sobreMim">Bruna Luise</a></p>
+        </div>
     </footer>
 
 </body>
