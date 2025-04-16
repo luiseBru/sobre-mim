@@ -37,7 +37,7 @@ header a:hover {
 
 }
 section {
-    height: 80vh;
+    min-height: 80vh;
     margin: 2rem;
     scroll-margin-top: 4rem;
     padding: 1rem;
@@ -48,10 +48,68 @@ section {
 p {
     margin-bottom: 1rem;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+}
+
+input[type="text"],
+input[type="email"],
+input, 
+textarea {
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    padding: .25rem .75rem;
+    color: #555;
+    resize: none;
+}
+input[type="submit"] {
+    background-color: #4a0b0b;
+    color: #ffffff;
+    padding: .25 rem .75rem;
+    border: none;font-weight: 700;
+}
+
+
+
+
 .place {
     background-color: white;
     border: 2px solid white;
     border-color: white;
     margin-bottom: 20px;
     padding: 2px;
+}
+body {
+    background-color: #471919af;
+    font-family: Arial, sans-serif;
+}
+
+/* Remove sublinhado dos links */
+a {
+    text-decoration: none;
+    color: #000; /* você pode mudar a cor se quiser */
+}
+
+a:hover {
+    text-decoration: underline; /* efeito ao passar o mouse, opcional */
+}
+
+/* Remove os marcadores das listas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Só um detalhe pra deixar o menu com mais espaçamento (opcional) */
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+img {
+    margin-top: 10px;
 }
