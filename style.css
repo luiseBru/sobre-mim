@@ -1,11 +1,20 @@
+:root {
+    --cor-primaria: #360707;
+    --cor--primaria: #0000001a;
+    --cor-fundo: #ffffff;
+    --cor-primaria-texto: #689994;
+    --cor-bordas: #aaa;
+}
+
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #471919af;
 }
 
 h1 {
-    font-size: 2em; /* 1rem = 16px -> 1em = "M" */
+    font-size: 2em;
     font-weight: bold;
+    color: var(--cor-primaria);
 }
 
 h2 {
@@ -15,10 +24,13 @@ h2 {
 
 header {
     background-color: #360707;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 2rem;
     box-shadow: 0px 4px 8px #0000001a;
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header ul {
@@ -28,44 +40,35 @@ header ul {
 }
 
 header a {
-    color:#ffffff;
+    color: #ffffff;
     font-weight: 700;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 header a:hover {
     background-color: #4a0b0b;
 }
 
-/* Adicionado do código da colega */
 footer ul {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-section ul li a:hover {
-    background-color: #aec8eb;
-}
-
-section li a:hover {
-    background-color: #aec8eb;
-}
-
+section ul li a:hover,
+section li a:hover,
 footer ul li:hover {
     background-color: #aec8eb;
 }
 
 section {
-    min-height: 80vh;
-    margin: 2rem;
+    height: auto;
+    margin: 2rem 0;
     scroll-margin-top: 4rem;
-    padding: 1rem;
-    border: 2px solid black;
-    /*overflow: hidden;*/
+    padding: 0;
+    border: none;
 }
 
-/* Adicionado do código da colega */
 section#formacao,
 section#hardSkills {
     border: none;
@@ -89,30 +92,24 @@ form {
 
 input[type="text"],
 input[type="email"],
-input, 
+input,
 textarea {
     border: 1px solid #aaa;
     border-radius: 8px;
-    padding: .25rem .75rem;
+    padding: 0.25rem 0.75rem;
     color: #555;
     resize: none;
 }
 
-/* Corrigido espaçamento incorreto no seu código */
 input[type="submit"] {
     background-color: #4a0b0b;
     color: #ffffff;
-    padding: .25rem .75rem;
+    padding: 0.25rem 0.75rem;
     border: none;
     font-weight: 700;
-}
-
-/* Adicionado do código da colega */
-input[type=submit] {
     border-radius: 10px;
 }
 
-/* Adicionado do código da colega */
 .card {
     border-radius: 8px;
     padding: 2rem;
@@ -152,12 +149,14 @@ input[type=submit] {
 .place {
     background-color: white;
     border: 2px solid white;
-    border-color: white;
-    margin-bottom: 20px;
-    padding: 2px;
+    border-radius: 1rem;
+    padding: 1.2rem auto;
+    margin: 2rem auto;
+    width: 90%;
+    box-shadow: 0 0 0 3px #000, 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
-/* Links */
 a {
     text-decoration: none;
     color: #000;
@@ -167,7 +166,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Listas */
 ul {
     list-style: none;
     padding: 0;
@@ -181,3 +179,50 @@ nav ul li {
 img {
     margin-top: 10px;
 }
+
+#toggle-contraste {
+    background-color: #fff;
+    color: #000;
+    padding: 0.4rem 0.8rem;
+    border: 2px solid #000;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#toggle-contraste:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+body.alto-contraste {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+body.alto-contraste a {
+    color: #fff !important;
+}
+
+body.alto-contraste header,
+body.alto-contraste footer,
+body.alto-contraste .card,
+body.alto-contraste .place {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+body.alto-contraste input,
+body.alto-contraste textarea {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+}
+
+body.alto-contraste input[type="submit"] {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
