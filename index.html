@@ -19,10 +19,10 @@
                 <li><a href="#meusProjetos">Projetos</a></li>
                 <li><a href="#meusArtigos">Artigos</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li><span id ="botao-tema">Tema</span></li>
+                <li><span id="botao-contraste">Contraste<i class="fi fi-sr-circle-half-stroke"></i></span></li>
             </ul>
         </nav>
-
-        <button id="toggle-contraste">Alto Contraste</button>
     </header>
 
     <section id="sobreMim">
@@ -30,21 +30,20 @@
             <h1>Sobre mim</h1>
             <p>Olá, sou estudante do SESI integrado com o SENAI DSI</p>
             <img src="bruna.jpg" alt="Foto de mulher branca com cabelo loiro e liso" width="200" title="Foto de mulher branca com cabelo loiro e liso">
-            <ul>
+            <ul id="minhas-redes">
                 <li><a href="https://github.com/luiseBru" target="_blank">Acesse o meu GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/brunaluise" target="_blank">Acesse o meu LinkedIn</a></li>
             </ul>
         </div>
     </section>
 
-
     <section id="formacaoAcademica">
         <div class="place">
-            <h2>Formação Academica</h2>
+            <h2>Formação Acadêmica</h2>
             <ul class="card">
                 <li class="titulo-card">Técnico em Desenvolvimento de Sistemas</li>
                 <li class="instituicao-card">SENAI "Conde José Vicente de Azevedo"</li>
-                <li class="ano-card">2026(previsto)</li>
+                <li class="ano-card">2026 (previsto)</li>
             </ul>
         </div>
     </section>
@@ -58,8 +57,7 @@
                     <li class="titulo-card">Python</li>
                     <li class="descrição-card">Full stack, Flask, FastAPI</li>
                 </ul>
-                <div class="cards-em-linha">
-                    <ul class="card">
+                <ul class="card">
                     <li class="icone-card">🌐</li>
                     <li class="titulo-card">Desenvolvimento Web</li>
                     <li class="descrição-card">Front-end, HTML, CSS, JavaScript</li>
@@ -71,7 +69,7 @@
                 </ul>
                 <ul class="card">
                     <li class="icone-card">🎲</li>
-                    <li class="titulo-card">Analize de Dados</li>
+                    <li class="titulo-card">Análise de Dados</li>
                     <li class="descrição-card">MySQL, Power BI</li>
                 </ul>
                 <ul class="card">
@@ -79,6 +77,7 @@
                     <li class="titulo-card">Teste de Software</li>
                     <li class="descrição-card">JUnit, Cypress</li>
                 </ul>
+            </div>
         </div>
     </section>
 
@@ -93,62 +92,101 @@
                 <li class="icone-card">🧠</li>
                 <li class="titulo-card">Pensamento crítico</li>
             </ul>
-
             <ul class="card">
                 <li class="icone-card">🤔</li>
-                <li class="titulo-card">Resolução de problemas </li>
+                <li class="titulo-card">Resolução de problemas</li>
             </ul>
-
             <ul class="card">
                 <li class="icone-card">🐙</li>
                 <li class="titulo-card">Adaptabilidade</li>
             </ul>
-
             <ul class="card">
                 <li class="icone-card">📚</li>
                 <li class="titulo-card">Aprendizado contínuo</li>
             </ul>
-
             <ul class="card">
                 <li class="icone-card">⏱️</li>
                 <li class="titulo-card">Autogestão</li>
             </ul>
-        </div>    
+        </div>
     </section>
 
     <section id="meusProjetos">
         <div class="place">
             <h2>Meus Projetos</h2>
-            <p>bbbbbbbb</p>
+            <div class="cards-em-linha">
+                <ul class="card">
+                    <li class="icone-card">🎮</li>
+                    <li class="titulo-card">
+                        <a href="https://rafadluz.github.io/lopal-moonlander/" target="_blank">Jogo de Alunissagem</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section id="meusArtigos">
         <div class="place">
-
+            <h2>Meus Artigos</h2>
+            <div class="artigos cards-em-linha">
+                <article class="card">
+                    <header>
+                        <h3 class="card-titulo">Portfólio profissional usando GitHub Pages</h3>
+                        <span class="data-publicacao">15 abr 2025</span>
+                        <span class="autor">Rafaela</span>
+                    </header>
+                    <p>Crie e publique seu portfólio profissional usando GitHub Pages, uma maneira fácil e gratuita de mostrar seus projetos e habilidades.</p>
+                    <footer>
+                        <button type="button" class="botao botao-primario">Continue lendo</button>
+                        <button type="button" class="botao botao-secundario" title="Compartilhar"><i class="fi fi-sr-share"></i></button>
+                    </footer>
+                </article>
+            </div>
         </div>
     </section>
 
-    <section id="contato">..mkk.</section>
+    <section id="contato">
+        <h2>Entre em contato comigo</h2>
+        <form>
+            <input type="text" name="nome" placeholder="Seu nome">
+            <input type="email" name="email" placeholder="Seu e-mail">
+            <textarea name="mensagem" rows="5" cols="50" placeholder="Sua mensagem"></textarea>
+            <input type="submit" value="Solicitar contato">
+        </form>
+    </section>
 
-    <footer>
-        <div class="place">
-            <ul>
-                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
-            </ul>
-            <address>São Paulo, SP - Brasil</address>
-            <p>Desenvolvido por <a href="#sobreMim">Bruna Luise</a></p>
-        </div>
+    <footer id="rodape">
+        <ul>
+            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+        </ul>
+        <address>São Paulo, SP - Brasil</address>
+        <p>Desenvolvido por <a href="#sobreMim">Bruna Luise</a></p>
     </footer>
+
     <script>
-        document.getElementById('toggle-contraste').addEventListener('click', function () {
-            document.body.classList.toggle('alto-contraste');
-        });
+        document.querySelector("#botao-tema").addEventListener("click", trocaTema);
+        function trocaTema(){
+            const root = document.documentElement;
+            if(root.getAttribute("data-theme") === "dark"){
+                root.removeAttribute("data-theme");
+            } else {
+                root.setAttribute("data-theme", "dark");
+            }
+        }
+
+        document.querySelector('#botao-contraste').addEventListener('click', trocarTemaContraste);
+
+        function trocarTemaContraste() {
+            const root = document.documentElement;
+            if (root.getAttribute('data-theme') === 'alto-contraste') {
+                root.removeAttribute('data-theme');
+            } else {
+                root.setAttribute('data-theme', 'alto-contraste');
+            }
+        }
     </script>
 
 </body>
-</html>  
-
-
+</html>
